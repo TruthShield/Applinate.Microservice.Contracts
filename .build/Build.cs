@@ -58,6 +58,8 @@ class Build : NukeBuild
     ///   - Microsoft VisualStudio     https://nuke.build/visualstudio
     ///   - Microsoft VSCode           https://nuke.build/vscode
 
+    static string Version = new Version(0, 1, 1).ToString();
+    
     public static int Main () => Execute<Build>(x => x.Test);
 
     [Parameter("Configuration to build - Default is 'Debug' (local) or 'Release' (server)")]
@@ -221,7 +223,6 @@ class Build : NukeBuild
             );
         });
 
-    static string Version = new Version(0, 1, 0).ToString();
 
     Target Pack => _ => _
       .DependsOn(Test)

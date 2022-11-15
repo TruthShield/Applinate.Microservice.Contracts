@@ -1,7 +1,7 @@
 ﻿// Copyright (c) TruthShield, LLC. All rights reserved.
 namespace Applinate
 {
-    public static class ServiceClinetExtensions
+    public static class ServiceClientExtensions
     {
         public static Builder BuildA(this ServiceClient c)  {
 

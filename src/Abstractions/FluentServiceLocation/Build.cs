@@ -1,8 +1,6 @@
 ﻿// Copyright (c) TruthShield, LLC. All rights reserved.
 namespace Applinate
 {
-    using Microsoft.CodeAnalysis.CSharp.Syntax;
-
     /// <summary>
     /// Lookup class used to find commands and queries.
     /// </summary>
